@@ -1,7 +1,7 @@
 import React, {useState} from "react";
 import Logo from "./components/DisplayComponents/Logo";
 import { numbers, operators, specials } from "../src/data";
-import NumberButton from "./components/ButtonComponents/NumberButtons/NumberButton";
+import Operators from "./components/ButtonComponents/OperatorButtons/Operators";
 import Numbers from "./components/ButtonComponents/NumberButtons/Numbers";
 import "./App.css";
 
@@ -28,11 +28,9 @@ function App() {
       <div className="App">
         {/* STEP 4 - Render your components here and be sure to properly import/export all files */}
         {
-          numberState.map((number => (
-            <NumberButton name={number}/>
-          )))
+          <Numbers />
         }
-        {/* <NumberButton /> */}
+        { <Operators /> }
       </div>
     </div>
   );
