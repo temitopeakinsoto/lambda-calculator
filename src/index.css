@@ -10,3 +10,51 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+
+.buttons
+ {
+   display: flex;
+ }
+.buttons-column {
+   flex-direction: column;
+   width: 420px;
+}
+.buttons-numbers {
+   flex-wrap: wrap;
+}
+.buttons-operators {
+   flex-direction: column;
+}
+
+button {
+   width: 100px;
+   height: 100px;
+   color: white;
+   border: 0px;
+   border-radius: 50px;
+   margin-top: 40px;
+   font-size: 30px;
+   box-shadow: 0px 5px rgb(82, 82, 82);
+   background-color: #235c9e;
+}
+.buttons-special > button {
+   background-color: #235c9e;
+   margin-right: 40px;
+}
+.buttons-numbers > button {
+   background: #184379;
+   margin-right: 40px;
+}
+button:nth-child(10) {
+width: 240px;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+
